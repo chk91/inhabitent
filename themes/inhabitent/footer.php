@@ -12,11 +12,28 @@
 				<footer id="colophon" class="site-footer" role="contentinfo">
 
 					<div class="footy">
+
 						<div class ="contact">
 							<h2>Contact Info</h2>
 							<a href = "mailto:info@inhabitent.com"><i class="fa fa-envelope" aria-hidden="true"></i>info@inhabitent.com</a>
 							<p>778-456-7891</p>
+
+						<p>
+							<a href="https://facebook.com">
+							<i class="fa fa-facebook-square" aria-hidden="true"></i>
+							</a>
+
+							<a href="https://twitter.com">
+							<i class="fa fa-twitter-square" aria-hidden="true"></i>
+							</a>
+
+							<a href="https://plus.google.com">
+							<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+							</a>
+						</p>
 						</div>
+
+
 
 						<div class="hours">
 							<h2>Business Hours</h2>
@@ -29,9 +46,9 @@
 							<img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-text.svg">
 						</div>
 
-							<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'copyright 2016 %s' ), 'Inhabitent' ); ?></a>
-				</div><!-- .site-info -->
+						<div class="site-info">
+							<p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2016 inhabitent </p>
+						</div><!-- .site-info -->
 
 					<div>
 				

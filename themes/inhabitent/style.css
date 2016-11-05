@@ -420,7 +420,9 @@ a {
 
 /* Menus */
 .menu-menu-1-container {
-  margin-right: 100px; }
+  margin-right: 150px; }
+  .menu-menu-1-container a {
+    color: white; }
   .menu-menu-1-container li {
     padding: 15px; }
 
@@ -431,7 +433,15 @@ a {
   -ms-flex-pack: justify;
       justify-content: space-between;
   width: 100%;
-  height: 40px; }
+  height: 40px;
+  background-color: transparent;
+  position: fixed; }
+  .main-navigation img {
+    height: 40px;
+    margin-left: 150px;
+    /*&:hover {
+			content: url(/images/logos/inhabitent-logo-tent.svg);
+			}*/ }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -679,6 +689,9 @@ footer {
   .footy .contact {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%; }
+    .footy .contact a {
+      text-decoration: none;
+      color: white; }
   .footy .hours {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%; }
@@ -695,3 +708,8 @@ footer {
 .site-info {
   text-align: center;
   width: 100%; }
+
+.banner-hero {
+  background: url(../../images/logos/inhabitent-logo-full.svg) no-repeat center, linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%), url(../../images/home-hero.jpg);
+  height: 850px;
+  background-size: 20%, cover, cover; }

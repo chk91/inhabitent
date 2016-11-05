@@ -24,13 +24,19 @@ a {
 	}
 }
 
+
 /* Menus */
 .menu-menu-1-container{
-	margin-right: 100px;
+	margin-right: 150px;
+
+	a{
+		color: white;
+	}
 
 	li{
 		padding: 15px;
 	}
+
 }
  
 .main-navigation {
@@ -39,6 +45,18 @@ a {
 	justify-content: space-between;
 	width: 100%;
 	height: 40px;
+	background-color: transparent;
+	position: fixed;
+
+		 img{
+			height: 40px;
+			margin-left: 150px;
+
+			/*&:hover {
+			content: url(/images/logos/inhabitent-logo-tent.svg);
+			}*/
+		}
+		
 
 
 	ul {
