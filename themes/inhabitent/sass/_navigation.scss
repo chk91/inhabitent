@@ -27,14 +27,14 @@ a {
 
 /* Menus */
 .menu-menu-1-container{
-	margin-right: 150px;
+	/*margin-right: 150px;*/
 
 	a{
 		color: white;
 	}
 
 	li{
-		padding: 15px;
+		padding: 0 15px;
 	}
 
 }
@@ -43,13 +43,13 @@ a {
 	clear: both;
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
 	background-color: transparent;
 	position: fixed;
+	width: 100%;
 
 		 img{
 			height: 40px;
-			margin-left: 150px;
+			/*margin-left: 150px;*/
 
 			/*&:hover {
 			content: url(/images/logos/inhabitent-logo-tent.svg);

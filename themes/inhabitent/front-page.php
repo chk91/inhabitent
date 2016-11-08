@@ -32,7 +32,10 @@ get_header(); ?>
   
              <div class="left">
                 <div class="box1">
-                    <a href="#">Getting Back to Nature in a Canoe</a>
+                    <div class="box-content">
+                    <a href="#" class="entry-titlefront">Getting Back to Nature in a Canoe</a>
+                    <a href="#" class="read-more">Read More</a>
+                    </div>
                 </div>
              </div>
   
@@ -40,16 +43,26 @@ get_header(); ?>
      
                 <div class="topright">
                     <div class="box2">
-                        <a href="#">A Night with Friends at the Beach</a>
+                        <div class="box-content">
+                        <a href="#" class="entry-titlefront">A Night with Friends at the Beach</a>
+                        <a href="#" class="read-more">Read More</a>
+                        </div>
                     </div>
                 </div>
      
              <div class="box34">
                 <div class="box3">
-                    <a href="#">Taking in the View at Big Mountain</a>
+                    <div class="box-content">
+                    <a href="#" class="entry-titlefront">Taking in the View at Big Mountain</a>
+                    <a href="#" class="read-more">Read More</a>
+                    </div>
                 </div>
+
                 <div class="box4">
-                    <a href="#">Star-Gazing at the Night Sky</a>
+                    <div class="box-content">
+                    <a href="#" class="entry-titlefront">Star-Gazing at the Night Sky</a>
+                    <a href="#" class="read-more">Read More</a>
+                    </div>
                 </div>
             <div>
                 
