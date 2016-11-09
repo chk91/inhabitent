@@ -24,8 +24,28 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
+    <h2 class="frontpageh2">Shop Stuff</h2>
+  <section class="shop-stuff container">
+            <?php
 
-        <section class="latestSection">
+            $terms = get_terms('product_type');
+            foreach ($terms as $term):
+            ?>
+
+            <div class="do-stuff container">
+            <?php $url = get_term_link ($term->slug , 'product_type'); ?>
+            
+
+            <img src="<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $term->slug?>.svg">
+            <p> <?php echo $term->description ?> </p>
+            <a class = "shopstuff-button" href=" "> <?php echo $term->name . ' Stuff'; ?> </a>
+            </div>
+
+            <?php endforeach; ?>
+
+</section>
+    <h2 class="frontpageh2">Inhabitent Journal</h2>
+        <section class="latestSection container">
 <ul>
             <?php 
             $args = array(   'post_type' => 'post',
@@ -36,17 +56,19 @@ get_header(); ?>
             <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
             <li>
             <?php the_post_thumbnail( 'category-thumb' ); ?>
-            <div>
-           <?php echo get_the_date(); ?>
-           <?php comments_number(); ?>
-           <a class ="read-more2" href = "<?php the_permalink();?>"> Read More</a>
-            <a href = "<?php the_permalink();?> "> <h2><?php the_title();?></h2> </a></li>
-            </div>
+            <div class="journalwrapper">
+           <p><?php echo get_the_date(); ?> / <?php comments_number(); ?></p>
+            <a href = "<?php the_permalink();?> "> <h2><?php the_title();?></h2>
+                       <a class ="read-more2" href = "<?php the_permalink();?>"> Read More</a>
+
+            </div></li>
+            
             <?php endforeach; wp_reset_postdata(); ?>
 </ul>
 
-        <section class="adventureSection">
-            <h2>Latest Adventures</h2>
+        <section class="adventureSection container">
+
+            <h2 class="frontpageh2">Latest Adventures</h2>
 
           <div class="adventures">
   

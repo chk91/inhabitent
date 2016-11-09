@@ -1,3 +1,65 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h2,p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1120px;
+}
+
+.shop-stuff {
+  display: flex;
+}
+
+.frontpageh2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 3rem 0;
+}
+
+.shopstuff-button {
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+    width: 130px;
+    padding: 0.65rem 1.3rem;
+    margin: 0.75rem 0;
+    background-color: #248A83;
+
+    &:visited {
+      color: #fff;
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: #19625d;
+    }
+
+}
+
+.do-stuff {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  padding: 1rem;
+  img {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+
 .adventureSection h2 {
     text-align: center;
     font-size: 2.5rem;
@@ -5,13 +67,13 @@
 
 .banner-hero {
     background: url(../../images/logos/inhabitent-logo-full.svg) no-repeat center, linear-gradient(to bottom, rgba(0, 0, 0, 0.4)0%, rgba(0, 0, 0, 0.2)100%), url(../../images/home-hero.jpg);
-    height: 850px;
+    height: 100vh;
     background-size:  20%, cover, cover;
 }
 
 .adventures {
   display: flex;
-  margin: 0 auto;
+  margin: 3rem 0;
   width: 100%;
   border-bottom: 20px solid white;
 
@@ -92,7 +154,7 @@
     color: white;
     border: 1px solid white;
     width: 130px;
-    padding: 0.75rem 1.5rem;    
+    padding: 0.65rem 1.5rem;    
 
     &:hover {
         background-color: #248A83;
@@ -107,11 +169,14 @@
     color: black;
     border: 1px solid black;
     width: 130px;
-    padding: 0.75rem 1.5rem;    
+    padding: 0.65rem 1.5rem;    
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
 
     &:hover {
         background-color: #248A83;
-        border: none;
+        color: #fff;
     }
 }
 
@@ -125,9 +190,40 @@
   ul{
     display: flex;
     justify-content: space-between;
+
+    img {
+      height: 250px;
+    }
     
     li {
-      list-style: none; 
+      list-style: none;
+      border: 1px solid #e1e1e1;
+      margin: 0 0.75rem;
     }
+  }
+}
+
+.journalwrapper {
+  position: relative;
+  height: 150px;
+  padding: 0 1.1rem;
+
+  a{
+    text-decoration: none;
+    &:visited {
+      color: black;
+    }
+    &:hover {
+      color: white;
+    }
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    color: #248A83;
+  }
+
+  p {
+    font-size: 0.75rem;
   }
 }
