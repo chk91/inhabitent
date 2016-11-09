@@ -25,6 +25,26 @@ get_header(); ?>
 
 		</main><!-- #main -->
 
+        <section class="latestSection">
+<ul>
+            <?php 
+            $args = array(   'post_type' => 'post',
+                    'order' => 'DESC',
+                    'posts_per_page' => 3);
+            $posts = get_posts( $args ); // returns an array of posts
+            ?>
+            <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
+            <li>
+            <?php the_post_thumbnail( 'category-thumb' ); ?>
+            <div>
+           <?php echo get_the_date(); ?>
+           <?php comments_number(); ?>
+           <a class ="read-more2" href = "<?php the_permalink();?>"> Read More</a>
+            <a href = "<?php the_permalink();?> "> <h2><?php the_title();?></h2> </a></li>
+            </div>
+            <?php endforeach; wp_reset_postdata(); ?>
+</ul>
+
         <section class="adventureSection">
             <h2>Latest Adventures</h2>
 
@@ -64,9 +84,6 @@ get_header(); ?>
                     <a href="#" class="read-more">Read More</a>
                     </div>
                 </div>
-            <div>
-                
-           </div>
   
          </div>
 

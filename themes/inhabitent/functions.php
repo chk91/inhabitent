@@ -110,3 +110,33 @@ function new_excerpt_more($more) {
     return '<div class="readmore"><a class="moretag" href="'. get_permalink($post->ID) . '"> Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+// function my_styles_method() {
+// 	if(!is_page_template('page-about.php')) {
+// 		return;
+// 	}
+
+
+// 	$url = CFS()->get( 'about_background_image' );
+// 	$custom_css = "
+// 		.about-hero {
+// 			background-image: url({$url});
+// 			}";
+// 		wp_add_inline_style( 'red-starter-style', $custom_css );
+// }
+// add_action( 'wp_enqueue_scripts','my_styles_method' );	
+
+// function my_styles_method() {
+
+//                 if(!is_page_template( 'page-about.php' )){
+//                     return;
+//                 }
+
+//        $url = CFS()->get( 'about_background_image' );//This is grabbing the background image vis Custom Field Suite Plugin
+//        $custom_css = "
+//                .about-hero{
+//                        background-image: url({$url});
+//                }";
+//        wp_add_inline_style( 'red-starter-style', $custom_css );
+// }
+// add_action( 'wp_enqueue_scripts', 'my_styles_method' );

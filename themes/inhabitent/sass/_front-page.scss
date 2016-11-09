@@ -100,8 +100,34 @@
     }
 }
 
+.read-more2 {
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+    width: 130px;
+    padding: 0.75rem 1.5rem;    
+
+    &:hover {
+        background-color: #248A83;
+        border: none;
+    }
+}
+
 .box-content {
     display: flex;
     flex-direction: column;
     margin: 1.5rem;
+}
+
+.latestSection {
+  ul{
+    display: flex;
+    justify-content: space-between;
+    
+    li {
+      list-style: none; 
+    }
+  }
 }

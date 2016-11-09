@@ -339,6 +339,11 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -670,6 +675,23 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.about-hero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-size: cover cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .about-hero div {
+    color: #fff;
+    font-size: 1.5rem; }
+
+.my-story {
+  height: 600px;
+  text-align: center; }
+
 footer {
   background: url(../../images/dark-wood@2x.png); }
 
@@ -798,12 +820,32 @@ footer {
     background-color: #248A83;
     border: none; }
 
+.read-more2 {
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+  width: 130px;
+  padding: 0.75rem 1.5rem; }
+  .read-more2:hover {
+    background-color: #248A83;
+    border: none; }
+
 .box-content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   margin: 1.5rem; }
+
+.latestSection ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .latestSection ul li {
+    list-style: none; }
 
 .content-areahome {
   padding-top: 5%;
@@ -816,12 +858,13 @@ footer {
   position: relative;
   margin-right: 2rem; }
   .entry-header img {
-    width: 100%;
-    height: 100%; }
+    width: 100%; }
 
-.site-mainhome article {
-  margin: 0 0 7rem; }
-
+/*.site-mainhome{
+	article {
+		margin: 0 0 7rem;
+	}
+}*/
 .entry-title {
   position: absolute;
   top: 0;
