@@ -12,8 +12,8 @@ get_header(); ?>
 
    
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="content-area-front">
+		<main id="main" class="site-main-front" role="main">
 
              
 
@@ -59,7 +59,7 @@ get_header(); ?>
             <div class="journalwrapper">
            <p><?php echo get_the_date(); ?> / <?php comments_number(); ?></p>
             <a href = "<?php the_permalink();?> "> <h2><?php the_title();?></h2>
-                       <a class ="read-more2" href = "<?php the_permalink();?>"> Read More</a>
+                       <a class ="read-more2" href = "<?php the_permalink();?>"> Read Entry</a>
 
             </div></li>
             

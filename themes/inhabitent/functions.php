@@ -86,6 +86,13 @@ function red_starter_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'); 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	// wp_enqueue_script( 'jQuery' );
+	// wp_enqueue_script( 'red_comments', get_template_directory_uri() . '/js/ajax-example.js', arrau )
+
+	// wp_localize_script( 'red_comments', 'red_vars', array(
+	// 	'rest_url' => esc_url_raw( rest_url() ),
+	// 	'wpapi_nonce' =>
+	// ) )
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -111,32 +118,3 @@ function new_excerpt_more($more) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
-// function my_styles_method() {
-// 	if(!is_page_template('page-about.php')) {
-// 		return;
-// 	}
-
-
-// 	$url = CFS()->get( 'about_background_image' );
-// 	$custom_css = "
-// 		.about-hero {
-// 			background-image: url({$url});
-// 			}";
-// 		wp_add_inline_style( 'red-starter-style', $custom_css );
-// }
-// add_action( 'wp_enqueue_scripts','my_styles_method' );	
-
-// function my_styles_method() {
-
-//                 if(!is_page_template( 'page-about.php' )){
-//                     return;
-//                 }
-
-//        $url = CFS()->get( 'about_background_image' );//This is grabbing the background image vis Custom Field Suite Plugin
-//        $custom_css = "
-//                .about-hero{
-//                        background-image: url({$url});
-//                }";
-//        wp_add_inline_style( 'red-starter-style', $custom_css );
-// }
-// add_action( 'wp_enqueue_scripts', 'my_styles_method' );

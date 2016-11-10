@@ -12,6 +12,16 @@
 }
 
 .my-story {
-    height: 600px;
-    text-align: center;
+    text-align: left;
+    padding: 3rem;
+
+    h2{
+        text-align: center;
+        font-size: 2.3rem;
+        text-transform: uppercase;
+    }
+
+    p{
+        margin: 1.5rem;
+    }
 }

@@ -29,7 +29,6 @@ h2,p {
     text-align: center;
     color: white;
     border: 1px solid black;
-    width: 130px;
     padding: 0.65rem 1.3rem;
     margin: 0.75rem 0;
     background-color: #248A83;
@@ -53,6 +52,7 @@ h2,p {
   border: 1px solid #e1e1e1;
   border-top-width: 5px;
   padding: 1rem;
+  text-transform: uppercase;
   img {
     height: 70px;
     width: 70px;
@@ -221,6 +221,10 @@ h2,p {
   h2 {
     font-size: 1.4rem;
     color: #248A83;
+
+    &:hover {
+      color: black;
+    }
   }
 
   p {

@@ -27,7 +27,7 @@
 				</div> .site-branding -->
 
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
+				<nav id="site-navigation" class="main-navigation container" role="navigation">
 						<a href = "http://localhost:3000/inhabitent/">
 							<img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent-white.svg">
 						</a>

@@ -1,3 +1,23 @@
-/*.type-post {
+.content-areasingle {
     display: flex;
-}*/
+}
+
+.site-mainsingle {
+    width: 75%;
+
+}
+
+.read-more {
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    width: 130px;
+    padding: 0.65rem 1.5rem;    
+
+    &:hover {
+        background-color: #248A83;
+        border: none;
+    }
+}

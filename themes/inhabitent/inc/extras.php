@@ -49,3 +49,39 @@ function my_styles_method() {
       wp_add_inline_style( 'red-starter-style', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'my_styles_method' );
+
+function get_all_product_posts( $query ) {
+      if( is_post_type_archive( 'product') && !is_admin() && $query->is_main_query() ) {
+            $query->set('posts_per_page','16');
+            $query->set('orderby','title');
+            $query->set('order','ASC');
+            return;
+      }
+}
+add_action( 'pre_get_posts', 'get_all_product_posts' );
+
+function inhabitent_product_archive_title ($title){
+      if(is_post_type_archive('product')){
+                  $title = 'Shop Stuff';
+      }
+      return $title;
+}
+add_filter( 'get_the_archive_title', 'inhabitent_product_archive_title' );
+
+function shop_stuff_title( $title ) {
+    if ( is_category() ) {
+        $title = single_cat_title( '', false );
+    } elseif ( is_tag() ) {
+        $title = single_tag_title( '', false );
+    } elseif ( is_author() ) {
+        $title = '<span class="vcard">' . get_the_author() . '</span>';
+    } elseif ( is_post_type_archive() ) {
+        $title = post_type_archive_title( '', false );
+    } elseif ( is_tax() ) {
+        $title = single_term_title( '', false );
+    }
+  
+    return $title;
+}
+ 
+add_filter( 'get_the_archive_title', 'shop_stuff_title' );
