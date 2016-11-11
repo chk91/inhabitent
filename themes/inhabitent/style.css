@@ -427,25 +427,24 @@ a {
 .menu-menu-1-container {
   /*margin-right: 150px;*/ }
   .menu-menu-1-container a {
-    color: white; }
+    color: #248a83; }
   .menu-menu-1-container li {
     padding: 0 15px; }
 
-.main-navigation {
-  clear: both;
+.nav-wrapper {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  background-color: transparent;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.main-navigation {
+  background-color: rgba(255, 255, 255, 0.85);
   position: fixed;
   width: 100%; }
   .main-navigation img {
-    height: 40px;
-    /*margin-left: 150px;*/
-    /*&:hover {
-			content: url(/images/logos/inhabitent-logo-tent.svg);
-			}*/ }
+    height: 40px; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -698,10 +697,8 @@ object {
   .my-story p {
     margin: 1.5rem; }
 
-footer {
-  background: url(../../images/dark-wood@2x.png); }
-
 .footy {
+  background: url(../../images/dark-wood@2x.png);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -940,6 +937,9 @@ h2, p {
   width: 1120px;
   display: -ms-flexbox;
   display: flex; }
+
+.entry-content p {
+  margin-bottom: 1.5rem; }
 
 .page-id-11 .site-content {
   display: -ms-flexbox;

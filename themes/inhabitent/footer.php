@@ -15,8 +15,8 @@
 
 						<div class ="contact">
 							<h2>Contact Info</h2>
-							<a href = "mailto:info@inhabitent.com"><i class="fa fa-envelope" aria-hidden="true"></i> info@inhabitent.com</a>
-							<a href = ""><i class="fa fa-phone" aria-hidden="true"></i> 778-456-7891</a>
+							<p><a href = "mailto:info@inhabitent.com"><i class="fa fa-envelope" aria-hidden="true"></i> info@inhabitent.com</a></p>
+							<p><a href = ""><i class="fa fa-phone" aria-hidden="true"></i> 778-456-7891</a></p>
 
 						<p>
 							<a href="https://facebook.com">

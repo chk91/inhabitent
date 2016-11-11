@@ -27,15 +27,17 @@
 				</div> .site-branding -->
 
 
-				<nav id="site-navigation" class="main-navigation container" role="navigation">
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+
+				<div class ="nav-wrapper container">
 						<a href = "http://localhost:3000/inhabitent/">
-							<img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent-white.svg">
+							<img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent.svg">
 						</a>
 
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
-
+				</div>
 				<div class="banner">
 
 				</div>

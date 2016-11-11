@@ -30,7 +30,7 @@ a {
 	/*margin-right: 150px;*/
 
 	a{
-		color: white;
+		color: #248a83;
 	}
 
 	li{
@@ -38,22 +38,21 @@ a {
 	}
 
 }
- 
-.main-navigation {
-	clear: both;
+
+.nav-wrapper {
 	display: flex;
 	justify-content: space-between;
-	background-color: transparent;
+	align-items: center;
+}
+
+ 
+.main-navigation {
+	background-color: hsla(0,0%,100%,.85);
 	position: fixed;
 	width: 100%;
 
 		 img{
 			height: 40px;
-			/*margin-left: 150px;*/
-
-			/*&:hover {
-			content: url(/images/logos/inhabitent-logo-tent.svg);
-			}*/
 		}
 		
 
