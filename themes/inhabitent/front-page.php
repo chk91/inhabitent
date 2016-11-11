@@ -38,7 +38,7 @@ get_header(); ?>
 
             <img src="<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $term->slug?>.svg">
             <p> <?php echo $term->description ?> </p>
-            <a class = "shopstuff-button" href=" "> <?php echo $term->name . ' Stuff'; ?> </a>
+            <a class = "shopstuff-button" href="product_type/<?php echo $term->slug;?>" > <?php echo $term->name . ' Stuff'; ?> </a>
             </div>
 
             <?php endforeach; ?>

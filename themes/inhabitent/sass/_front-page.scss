@@ -28,10 +28,10 @@ h2,p {
     text-decoration: none;
     text-align: center;
     color: white;
-    border: 1px solid black;
     padding: 0.65rem 1.3rem;
     margin: 0.75rem 0;
     background-color: #248A83;
+    text-transform: uppercase;
 
     &:visited {
       color: #fff;
@@ -52,7 +52,11 @@ h2,p {
   border: 1px solid #e1e1e1;
   border-top-width: 5px;
   padding: 1rem;
-  text-transform: uppercase;
+
+  &:hover {
+    border: 1px solid #d99054;
+    border-top-width: 5px;
+  }
   img {
     height: 70px;
     width: 70px;

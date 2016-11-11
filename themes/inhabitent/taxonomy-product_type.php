@@ -43,7 +43,7 @@ get_header(); ?>
 
 				  <div class = "one-product">
                    <?php if ( has_post_thumbnail() ) : ?>
-				   <div>
+				   <div class="thumbnail-wrapper">
 			<a href="<?php the_permalink()?> "><?php the_post_thumbnail( 'large' ); ?></a>
 			</div>
 		<?php endif; ?>

@@ -731,8 +731,9 @@ footer {
   margin-top: 25px; }
 
 .site-info {
-  text-align: left;
-  width: 100%; }
+  text-align: center;
+  width: 100%;
+  padding: 2rem 1rem; }
 
 ul {
   margin: 0;
@@ -760,10 +761,10 @@ h2, p {
   text-decoration: none;
   text-align: center;
   color: white;
-  border: 1px solid black;
   padding: 0.65rem 1.3rem;
   margin: 0.75rem 0;
-  background-color: #248A83; }
+  background-color: #248A83;
+  text-transform: uppercase; }
   .shopstuff-button:visited {
     color: #fff; }
   .shopstuff-button:hover {
@@ -780,8 +781,10 @@ h2, p {
   text-align: center;
   border: 1px solid #e1e1e1;
   border-top-width: 5px;
-  padding: 1rem;
-  text-transform: uppercase; }
+  padding: 1rem; }
+  .do-stuff:hover {
+    border: 1px solid #d99054;
+    border-top-width: 5px; }
   .do-stuff img {
     height: 70px;
     width: 70px; }
