@@ -26,7 +26,7 @@ get_header(); ?>
 
 				<div class = "social-wrapper">
 
-					<a class ="social-button" hef ="">
+					<a class ="social-button" href ="">
 						<i class="fa fa-facebook-square" aria-hidden="true"> Like</i>
 					</a>
 

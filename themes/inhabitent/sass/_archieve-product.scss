@@ -42,7 +42,7 @@
             color: #248A83;
             text-decoration: none;
             &:hover {
-                color: black;
+                color: #2f1339;
             }
         }
     }
@@ -50,4 +50,6 @@
 
 .page-title {
     text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
 }

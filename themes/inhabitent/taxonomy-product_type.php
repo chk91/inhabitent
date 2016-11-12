@@ -13,25 +13,10 @@ get_header(); ?>
 		<header class="archive-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-<section class="shop-stuffarch container">
-		<ul class="do-stuffarch container">
-            <?php
 
-            $terms = get_terms('product_type');
-            foreach ($terms as $term):
-            ?>
-
-            <li>
-            <?php $url = get_term_link ($term->slug , 'product_type'); ?>
-            
-            <a class = "shopstuff-buttonarch" href="<?php echo $url?> "> <?php echo $term->name ; ?> </a>
-            </li>
-
-            <?php endforeach; ?>
-			</ul>
-</section>
 
 		<?php if ( have_posts() ) : ?>
 

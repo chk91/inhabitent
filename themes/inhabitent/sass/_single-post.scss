@@ -2,11 +2,26 @@
     display: flex;
 }
 
-
-
 .site-mainsingle {
     width: 75%;
+}
 
+.entry-footer {
+    a {
+        color: #248A83;
+
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+.type-post .entry-title {
+    color: white;
+}
+
+.cat-links {
+    margin-right: 10px;
 }
 
 .read-more {
@@ -22,4 +37,27 @@
         background-color: #248A83;
         border: none;
     }
+}
+
+.social-wrapper {
+    margin-bottom: 3rem;
+}
+
+.social-button {
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+    padding: 0.65rem 1.5rem;
+    margin-right: 5px;
+
+        &:visited {
+            color: black;
+        }
+
+        &:hover {
+        background-color: #248A83;
+        color: #fff;
+        }
 }

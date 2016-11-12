@@ -14,6 +14,9 @@ get_header(); ?>
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 				?>
+
+				 <p><?php echo category_description( get_category_by_slug('category-slug')->term_id ); ?></p>
+
 			</header><!-- .page-header -->
 <section class="shop-stuffarch container">
 		<ul class="do-stuffarch container">

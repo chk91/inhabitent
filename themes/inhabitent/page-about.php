@@ -13,7 +13,9 @@
    </section>
 
    <div class="my-story container">
-       <?php echo CFS()->get('our_story');?>
+        <div class="my-story-wrapper">
+            <?php echo CFS()->get('our_story');?>
+        </div>
     </div>
 
  </main><!-- #main -->
