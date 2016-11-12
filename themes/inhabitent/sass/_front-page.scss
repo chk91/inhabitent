@@ -21,6 +21,7 @@ h2,p {
   text-align: center;
   font-size: 2.5rem;
   margin: 3rem 0;
+  text-transform: uppercase;
 }
 
 .shopstuff-button {
@@ -142,9 +143,10 @@ h2,p {
 }
 
 .entry-titlefront {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         text-decoration: none;
         color: white;
+        margin-bottom: 15px;
 
         &:hover {
             color: #f0e4d1;
@@ -209,7 +211,7 @@ h2,p {
 .journalwrapper {
   position: relative;
   height: 150px;
-  padding: 0 1.1rem;
+  padding: 0.4rem 1.1rem;
 
   a{
     text-decoration: none;

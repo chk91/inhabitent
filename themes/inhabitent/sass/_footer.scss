@@ -8,10 +8,12 @@
 
     h2 {
         color:#d99054;
+        text-transform: uppercase;
     }
 
     .contact {
         flex-basis: 25%;
+        line-height: 2.5;
         
         a{
             text-decoration: none;
@@ -21,6 +23,7 @@
 
     .hours {
         flex-basis: 25%;
+        line-height: 2.5;
     }
 
     .footyLogo {
@@ -39,4 +42,5 @@
     text-align: center;
     width: 100%;
     padding: 2rem 1rem;
+    text-transform: uppercase;
 }

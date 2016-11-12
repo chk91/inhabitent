@@ -55,7 +55,9 @@ get_header(); ?>
             ?>
             <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
             <li>
+                <div class="thumbnail-wrapper">
             <?php the_post_thumbnail( 'category-thumb' ); ?>
+                </div>
             <div class="journalwrapper">
            <p><?php echo get_the_date(); ?> / <?php comments_number(); ?></p>
             <a href = "<?php the_permalink();?> "> <h2><?php the_title();?></h2>
