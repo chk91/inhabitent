@@ -17,7 +17,6 @@ get_header(); ?>
 
 				 <p><?php echo category_description( get_category_by_slug('category-slug')->term_id ); ?></p>
 
-			</header><!-- .page-header -->
 <section class="shop-stuffarch container">
 		<ul class="do-stuffarch container">
             <?php
@@ -35,6 +34,8 @@ get_header(); ?>
             <?php endforeach; ?>
 			</ul>
 </section>
+			</header><!-- .page-header -->
+
 
 		<?php if ( have_posts() ) : ?>
 
