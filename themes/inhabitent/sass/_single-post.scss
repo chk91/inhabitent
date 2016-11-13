@@ -16,8 +16,15 @@
     }
 }
 
-.type-post .entry-title {
-    color: white;
+.single-post .entry-title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0.75rem 1.5rem;
+	margin-top: 2.25rem;
+	background-color: #248a83;
+    color: #fff;
+    
 }
 
 .cat-links {

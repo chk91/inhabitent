@@ -37,9 +37,9 @@
 
 						<div class="hours">
 							<h2>Business Hours</h2>
-							<p>Monday-Friday: 9am to 5pm</p>
-							<p>Saturday: 10am to 2pm</p>
-							<p>Sunday: Closed</p>
+							<p><span class="day">Monday-Friday:</span> 9am to 5pm</p>
+							<p><span class="day">Saturday:</span> 10am to 2pm</p>
+							<p><span class="day">Sunday:</span> Closed</p>
 						</div>
 
 						<div class="footyLogo">

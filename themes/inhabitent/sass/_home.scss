@@ -60,7 +60,7 @@
 		width: 70%;
 }
 
-.type-post .entry-title {
+.blog .type-post .entry-title{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -78,7 +78,7 @@
 	}
 }
 
-.entry-meta {
+.blog .entry-meta, .single .entry-meta {
 	position: absolute;
 	bottom: 7px;
 	right: 0;

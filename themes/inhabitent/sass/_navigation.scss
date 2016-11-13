@@ -24,6 +24,18 @@ a {
 	}
 }
 
+.search-form {
+	display: flex;
+}
+
+.search-field {
+	display: none;
+}
+
+fieldset {
+	border: none;
+}
+
 
 /* Menus */
 .menu-menu-1-container{

@@ -423,6 +423,16 @@ a {
   a:hover, a:active {
     outline: 0; }
 
+.search-form {
+  display: -ms-flexbox;
+  display: flex; }
+
+.search-field {
+  display: none; }
+
+fieldset {
+  border: none; }
+
 /* Menus */
 .menu-menu-1-container {
   /*margin-right: 150px;*/ }
@@ -725,7 +735,7 @@ object {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 5% 10%;
+  padding: 3% 10%;
   color: white;
   line-height: 2; }
   .footy h2 {
@@ -757,6 +767,9 @@ object {
   width: 100%;
   padding: 2rem 1rem;
   text-transform: uppercase; }
+
+.day {
+  font-weight: bold; }
 
 ul {
   margin: 0;
@@ -1005,20 +1018,20 @@ h2, p {
   border-right: 1px solid #e1e1e1;
   width: 70%; }
 
-.type-post .entry-title {
+.blog .type-post .entry-title {
   position: absolute;
   top: 0;
   left: 0;
   padding: 0.75rem 1.5rem;
   margin-top: 2.25rem;
   background-color: #248a83; }
-  .type-post .entry-title a {
+  .blog .type-post .entry-title a {
     color: white;
     text-decoration: none; }
-    .type-post .entry-title a:hover {
+    .blog .type-post .entry-title a:hover {
       color: #f0e4d1; }
 
-.entry-meta {
+.blog .entry-meta, .single .entry-meta {
   position: absolute;
   bottom: 7px;
   right: 0;
@@ -1105,8 +1118,14 @@ h2, p {
   .entry-footer a:hover {
     color: black; }
 
-.type-post .entry-title {
-  color: white; }
+.single-post .entry-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.75rem 1.5rem;
+  margin-top: 2.25rem;
+  background-color: #248a83;
+  color: #fff; }
 
 .cat-links {
   margin-right: 10px; }
@@ -1182,3 +1201,42 @@ h2, p {
     line-height: 1.5; }
   .single-product .entry-content .price {
     font-size: 1.7rem; }
+
+.search-results article img {
+  display: none; }
+
+.search-results .page-title {
+  text-align: left;
+  font-size: 2.2rem;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 2rem; }
+
+.search-results .entry-title {
+  padding-top: 1.7rem; }
+  .search-results .entry-title a {
+    color: #248a83;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem; }
+    .search-results .entry-title a:hover {
+      color: #2f1339; }
+
+.search-results .readmore {
+  margin-top: 1.5rem; }
+
+.search-results .search-pagination {
+  padding: 2rem 0;
+  border-top: 1px solid #e1e1e1;
+  margin-bottom: 2rem; }
+
+.page-numbers .current {
+  background-color: gray; }
+
+.search-results .search-pagination .page-numbers {
+  padding: 0.5rem 0.75rem;
+  background-color: #248a83;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .search-results .search-pagination .page-numbers:hover {
+    background-color: #2f1339; }

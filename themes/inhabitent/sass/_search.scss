@@ -1,0 +1,50 @@
+.search-results article {
+    img{
+    display: none;
+    }
+}
+
+.search-results .page-title {
+    text-align: left;
+    font-size: 2.2rem;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 2rem;
+}
+
+.search-results .entry-title {
+    padding-top: 1.7rem;
+    a {
+        color: #248a83;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 2rem;
+        &:hover {
+            color: #2f1339;
+        }
+    }
+}
+
+.search-results .readmore {
+    margin-top: 1.5rem;
+}
+
+.search-results .search-pagination {
+    padding: 2rem 0;
+    border-top: 1px solid #e1e1e1;
+    margin-bottom: 2rem;
+}
+
+.page-numbers .current {
+    background-color: gray;
+}
+
+.search-results .search-pagination .page-numbers {
+    padding: 0.5rem 0.75rem;
+    background-color: #248a83;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+        background-color: #2f1339;
+    }
+}
