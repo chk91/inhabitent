@@ -1,0 +1,54 @@
+.error404 .site-content {
+    padding-top: 50px;
+}
+
+.error404 .widgettitle, .error404 .widget-title {
+        font-weight: bold;
+        padding: 1.3rem 0;
+}
+
+.error404 .page-title {
+    text-align: left;
+}
+
+.error404 .page-content {
+    p {
+        padding: 1.3rem 0;
+    }
+}
+
+.error404 fieldset {
+    padding-left: 0;
+}
+
+.error404 .widget_archive {
+    margin-bottom: 3rem;
+}
+
+.error404 .not-found .search-submit {
+    display: none;
+}
+
+.error404 .widget_categories {
+    li {
+        list-style: none;
+        a {
+            color: #248a83;
+            text-decoration: none;
+        }
+    }
+}
+
+.error404 .widget_recent_entries {
+    h2 {
+        
+    }
+
+    li{
+        list-style: none;
+        a{
+            color: #248a83;
+            text-decoration: none;
+        }
+    }
+}
