@@ -27,8 +27,10 @@
 							<img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent.svg">
 						</a>
 					<div class="nav-button-wrapper">
+						<div class="buttons-wrapper">
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						</div>
 						<?php get_search_form(); ?>
 					</div>
 				</nav><!-- #site-navigation -->

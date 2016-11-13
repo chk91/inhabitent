@@ -34,6 +34,8 @@ a {
 
 fieldset {
 	border: none;
+	padding: 0;
+	padding-left: 1.1rem;
 }
 
 
@@ -51,7 +53,7 @@ fieldset {
 	}
 
 	li{
-		padding: 0 15px;
+		padding-left: 1.5rem;
 	}
 
 }
@@ -59,6 +61,10 @@ fieldset {
 .nav-wrapper {
 	display: flex;
 	justify-content: space-between;
+}
+
+.nav-button-wrapper {
+	display: flex;
 	align-items: center;
 }
 

@@ -3,9 +3,22 @@ ul {
   padding: 0;
 }
 
-h2,p {
+h1, h2 {
   margin: 0;
   padding: 0;
+  font-family: 'novecento_normal';
+  font-weight: 400;
+  font-style: normal;
+}
+
+p{
+  font-family: 'Merriweather';
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
 }
 
 .container {
@@ -47,16 +60,24 @@ h2,p {
 
 .do-stuff {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   text-align: center;
   border: 1px solid #e1e1e1;
   border-top-width: 5px;
   padding: 1rem;
+  margin-right: 25px;
 
+  &:last-child {
+    margin-right: 0;
+  }
   &:hover {
     border: 1px solid #d99054;
     border-top-width: 5px;
+  }
+  p {
+    margin: 20px 0;
   }
   img {
     height: 70px;
@@ -234,5 +255,6 @@ h2,p {
 
   p {
     font-size: 0.75rem;
+    margin-top: 2px;
   }
 }
