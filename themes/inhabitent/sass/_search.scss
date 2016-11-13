@@ -48,3 +48,15 @@
         background-color: #2f1339;
     }
 }
+
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-no-results {
+    p{
+    padding-bottom: 1.5rem;
+    }
+}

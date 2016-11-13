@@ -24,6 +24,19 @@ a {
 	}
 }
 
+.search-submit {
+	border: none;
+	padding: 0;
+	box-shadow: none;
+	background: none;
+}
+
+.icon-search {
+	color: #248a83;
+	font-size: 1.05rem;
+	padding-right:1.2rem;
+}
+
 .search-form {
 	display: flex;
 }

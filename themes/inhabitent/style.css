@@ -465,6 +465,17 @@ a {
   a:hover, a:active {
     outline: 0; }
 
+.search-submit {
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  background: none; }
+
+.icon-search {
+  color: #248a83;
+  font-size: 1.05rem;
+  padding-right: 1.2rem; }
+
 .search-form {
   display: -ms-flexbox;
   display: flex; }
@@ -1268,6 +1279,16 @@ body {
     .single-post .comment-metadata a:hover {
       color: #2f1339; }
 
+.single-post .submit {
+  margin: 1.5rem 0;
+  background-color: #248a83;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 0;
+  font-size: 1.05rem; }
+
 .taxonomy-description {
   margin-bottom: 3rem;
   padding-bottom: 3rem;
@@ -1349,6 +1370,17 @@ body {
   text-transform: uppercase; }
   .search-results .search-pagination .page-numbers:hover {
     background-color: #2f1339; }
+
+.search-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.search-no-results p {
+  padding-bottom: 1.5rem; }
 
 .page-id-11 .anyipsum-output h2 {
   font-size: 2.2rem;
