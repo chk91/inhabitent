@@ -27,8 +27,11 @@
     
 }
 
-.cat-links {
+.single-post .cat-links,.single-post .tags-links {
     margin-right: 10px;
+    a {
+        text-decoration: none;
+    }
 }
 
 .read-more {
@@ -67,4 +70,57 @@
         background-color: #248A83;
         color: #fff;
         }
+}
+
+.single-post .reply {
+    a {
+        color: #248A83;
+        text-decoration: none;
+    }
+}
+
+.single-post .comments-title {
+    color: black;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.single-post h3 {
+    font-size: 2.2rem;
+}
+
+.single-post .comment-body {
+    display: flex;
+    padding-bottom: 1.5rem;
+}
+
+.single-post .comment-content {
+    line-height: 2;
+}
+
+.single-post .bypostauthor {
+    padding-top: 1.5rem;
+}
+
+.single-post .comment-author-avatar {
+    margin-right: 1.5rem;
+    img{
+     border-radius: 50%;
+    }
+}
+
+.single-post .vcard .fn {
+    font-weight: bold;
+}
+
+.single-post .comment-metadata {
+    color: gray;
+    a {
+        color: #248a83;
+        text-decoration: none;
+        &:hover {
+            color: #2f1339;
+        }
+    }
 }
