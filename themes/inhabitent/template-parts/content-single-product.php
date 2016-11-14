@@ -21,7 +21,7 @@
 
 	<div class="entry-content">
         		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-               <p class="price"><?php echo CFS()->get( 'product_price' ); ?> </p>
+               <p class="product-price"><?php echo CFS()->get( 'product_price' ); ?> </p>
 
 		<?php the_content(); ?>
         <div class = "social-wrapper">

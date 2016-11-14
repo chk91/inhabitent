@@ -27,15 +27,15 @@ get_header(); ?>
 				<div class = "social-wrapper">
 
 					<a class ="social-button" href ="">
-						<i class="fa fa-facebook-square" aria-hidden="true"> Like</i>
+						<i class="fa fa-facebook-square" aria-hidden="true"> </i> Like
 					</a>
 
 					<a class ="social-button" href ="">
-						<i class="fa fa-twitter" aria-hidden="true"> Tweet</i>
+						<i class="fa fa-twitter" aria-hidden="true"></i> Tweet
 					</a>
 
 					<a class ="social-button" href ="">
-						<i class="fa fa-pinterest" aria-hidden="true"> Pin</i>
+						<i class="fa fa-pinterest" aria-hidden="true"> </i> Pin
 					</a>
 
 				</div>

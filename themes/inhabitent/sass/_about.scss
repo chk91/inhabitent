@@ -1,3 +1,7 @@
+.page-template-page-about p {
+    font-family: 'Merriweather';
+}
+
 .about-hero {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4)0%, rgba(0, 0, 0, 0.2)100%);
     background-size: cover cover;
@@ -8,6 +12,8 @@
     div{
         color: #fff;
         font-size: 1.5rem;
+        font-family: 'novecento_demi';
+        letter-spacing: 2px;
     }
 }
 
@@ -19,6 +25,8 @@
         text-align: center;
         font-size: 2.3rem;
         text-transform: uppercase;
+        font-family: 'novecento_normal';
+        letter-spacing: 2px;
     }
 
     p{

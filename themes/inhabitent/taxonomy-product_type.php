@@ -34,9 +34,9 @@ get_header(); ?>
 		<?php endif; ?>
 
 <div class="product-info">
-		<?php the_title( sprintf( '<p>', esc_url( get_permalink() ) ), '</p>' ); ?>
+		<?php the_title( sprintf( '<p class="product-name"><span>', esc_url( get_permalink() ) ), '</span></p>' ); ?>
 
-               <p><?php echo CFS()->get( 'product_price' ); ?> </p>
+               <p class="product-price"><?php echo CFS()->get( 'product_price' ); ?> </p>
                </div>
 </div>
 			<?php endwhile; ?>

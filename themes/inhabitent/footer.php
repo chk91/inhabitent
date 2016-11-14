@@ -15,20 +15,20 @@
 
 						<div class ="contact">
 							<h2>Contact Info</h2>
-							<p><a href = "mailto:info@inhabitent.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i> info@inhabitent.com</a></p>
-							<p><a href = ""><i class="fa fa-phone fa-2x" aria-hidden="true"></i> 778-456-7891</a></p>
+							<p><a href = "mailto:info@inhabitent.com"><i class="fa fa-envelope" aria-hidden="true"></i> info@inhabitent.com</a></p>
+							<p><a href = ""><i class="fa fa-phone" aria-hidden="true"></i> 778-456-7891</a></p>
 
 						<p>
 							<a href="https://facebook.com">
-							<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+							<i class="fa fa-facebook-square" aria-hidden="true"></i>
 							</a>
 
 							<a href="https://twitter.com">
-							<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+							<i class="fa fa-twitter-square" aria-hidden="true"></i>
 							</a>
 
 							<a href="https://plus.google.com">
-							<i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
+							<i class="fa fa-google-plus-square" aria-hidden="true"></i>
 							</a>
 						</p>
 						</div>

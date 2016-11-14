@@ -1,3 +1,17 @@
+.single-post {
+    h1,h2,h3 {
+        font-family:'novecento_demi';
+        font-size: 2.2rem;
+    }
+    p {
+        font-family: 'Merriweather';
+    }
+}
+
+.day-of-week {
+    font-weight: bold;
+}
+
 .content-areasingle {
     display: flex;
 }
@@ -29,6 +43,7 @@
 
 .single-post .cat-links,.single-post .tags-links {
     margin-right: 10px;
+    text-transform: uppercase;
     a {
         text-decoration: none;
     }
@@ -41,11 +56,25 @@
     color: white;
     border: 1px solid white;
     width: 130px;
-    padding: 0.65rem 1.5rem;    
+    padding: 0.65rem 1.5rem;
 
     &:hover {
         background-color: #248A83;
         border: none;
+    }
+}
+
+.blog .read-more {
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+    padding: 0.65rem 1.5rem;
+
+    &:hover {
+        background-color: #248A83;
+        color: #fff;
     }
 }
 
@@ -61,6 +90,8 @@
     border: 1px solid black;
     padding: 0.65rem 1.5rem;
     margin-right: 5px;
+    text-transform: uppercase;
+    font-family: 'novecento_normal';
 
         &:visited {
             color: black;
@@ -86,10 +117,6 @@
     font-weight: bold;
 }
 
-.single-post h3 {
-    font-size: 2.2rem;
-}
-
 .single-post .comment-body {
     display: flex;
     padding-bottom: 1.5rem;
@@ -97,6 +124,7 @@
 
 .single-post .comment-content {
     line-height: 2;
+    font-family: 'Merriweather';
 }
 
 .single-post .bypostauthor {
@@ -125,6 +153,15 @@
     }
 }
 
+.single-post .comment-list {
+    margin: 0;
+    padding: 0;
+
+    li, article {
+        border-bottom: 1px solid #e1e1e1;
+    }
+}
+
 .single-post .submit {
     margin: 1.5rem 0;
 	background-color: #248a83;
@@ -134,4 +171,75 @@
     text-shadow: none;
     border-radius: 0;
     font-size: 1.05rem;
+}
+
+.single-post .comment-form-author {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 49%;
+    margin-bottom: 1.5rem;
+
+    label {
+        margin-bottom: .5rem;
+        text-transform: uppercase;
+        font-family: 'novecento_normal';
+    }
+    input {
+        padding: .4rem;
+        background-color: #f4f4f4;
+    }
+}
+
+.single-post .comment-form-email {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 49%;
+    margin-bottom: 1.5rem;
+    label {
+        margin-bottom: .5rem;
+        text-transform: uppercase;
+        font-family: 'novecento_normal';
+    }
+    input {
+        padding: .4rem;
+        background-color: #f4f4f4;
+    }
+}
+
+.single-post .required {
+    color: #d99054;
+}
+
+.single-post .comment-form-comment {
+    margin: 1.5rem 0;
+
+    label {
+        font-family: 'novecento_normal';
+        font-size: 1.1rem;
+    }
+    textarea {
+        margin-top: 0.5rem;
+        background-color: #f4f4f4;
+    }
+}
+
+.single-post #url {
+    width: 100%;
+    padding: .4rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    background-color: #f4f4f4;
+}
+
+.single-post .comment-form-url {
+    label {
+        text-transform: uppercase;
+        font-family: 'novecento_normal';
+    }
+}
+
+.single-post .comment-respond {
+    padding-right: 2rem;
 }

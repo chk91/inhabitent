@@ -17,7 +17,7 @@ get_header(); ?>
 
 				 <p><?php echo category_description( get_category_by_slug('category-slug')->term_id ); ?></p>
 
-<section class="shop-stuffarch container">
+	<section class="shop-stuffarch container">
 		<ul class="do-stuffarch container">
             <?php
 
@@ -33,33 +33,33 @@ get_header(); ?>
 
             <?php endforeach; ?>
 			</ul>
-</section>
+	</section>
 			</header><!-- .page-header -->
 
 
 		<?php if ( have_posts() ) : ?>
 
-
-
 			<?php /* Start the Loop */ ?>
 			<div class = "fap-master">
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				  <div class = "one-product">
-                   <?php if ( has_post_thumbnail() ) : ?>
-				   <div class="thumbnail-wrapper">
-			<a href="<?php the_permalink()?> "><?php the_post_thumbnail( 'large' ); ?></a>
+			<div class = "one-product">
+                <?php if ( has_post_thumbnail() ) : ?>
+			<div class="thumbnail-wrapper">
+				<a href="<?php the_permalink()?> "><?php the_post_thumbnail( ); ?></a>
 			</div>
-		<?php endif; ?>
 
-<div class="product-info">
-		<?php the_title( sprintf( '<p>', esc_url( get_permalink() ) ), '</p>' ); ?>
+			<?php endif; ?>
 
-               <p><?php echo CFS()->get( 'product_price' ); ?> </p>
-               </div>
-</div>
+			<div class="product-info">
+				<?php the_title( sprintf( '<p class="product-name"><span>', esc_url( get_permalink() ) ), '</span></p>' ); ?>
+
+               <p class="product-price"><?php echo CFS()->get( 'product_price' ); ?> </p>
+            </div>
+
+			</div>
 			<?php endwhile; ?>
-		</div>
+			</div>
 
 			<?php the_posts_navigation(); ?>
 

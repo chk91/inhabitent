@@ -1,3 +1,7 @@
+.search-results p {
+    font-family: 'Merriweather';
+}
+
 .search-results article {
     img{
     display: none;
@@ -59,4 +63,19 @@
     p{
     padding-bottom: 1.5rem;
     }
+}
+
+.search-results .read-more {
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+    padding: 0.65rem 1.5rem;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: #248A83;
+        color: #fff;
+}
 }

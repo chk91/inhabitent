@@ -1,3 +1,7 @@
+.blog p{
+	font-family: 'Merriweather';
+}
+
 .content-areahome {
 	padding-top: 50px;
 	margin: 0 auto;
@@ -49,10 +53,15 @@
 .entry-header {
 	position: relative;
 	margin-right: 2rem;
+	text-transform: uppercase;
 
 	img{
 		width:100%;
 	}
+}
+
+.blog article {
+	margin: 3rem 0;
 }
 
 .site-mainhome {
@@ -67,6 +76,9 @@
 	padding: 0.75rem 1.5rem;
 	margin-top: 2.25rem;
 	background-color: #248a83;
+	font-size: 2rem;
+	font-family: 'novecento_demi';
+	max-width: 75%;
 
 	a{
 		color: white;
@@ -85,6 +97,8 @@
 	background-color: #248a83;
 	color: #fff;
 	padding: 0.5rem 1.5rem;
+	text-transform: uppercase;
+	font-family: 'novecento_normal';
 
 }
 
