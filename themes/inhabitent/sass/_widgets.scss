@@ -11,6 +11,10 @@
 	}
 }
 
+.widget-title {
+	margin: 0;
+}
+
 /* Search widget. */
 .widget_search .search-submit {
 	display: none;
@@ -38,6 +42,34 @@
 
 /*Search Form Area*/
 
-.wpcf7 {
+.day-of-week {
+    font-weight: bold;
+}
+
+.page .widget-area {
+    padding: 3rem;
+	width: 30%;
+	line-height: 2;
 	
+	li {
+		list-style: none;
+		a {
+		color: #248a83;
+		text-decoration: none;
+		}
+	}
+}
+
+.widget-area {
+    padding: 3rem;
+	width: 30%;
+	line-height: 2;
+	
+	li {
+		list-style: none;
+		a {
+		color: #248a83;
+		text-decoration: none;
+		}
+	}
 }

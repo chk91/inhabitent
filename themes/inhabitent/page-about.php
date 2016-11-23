@@ -4,8 +4,7 @@
 <div id="primary-about" class="content-area-about">
  <main id="main" class="site-main" role="main">
   
-     
-  
+
    <section class="about-hero">
        <div>
        <h1>About</h1>
@@ -15,6 +14,7 @@
    <div class="my-story container">
         <div class="my-story-wrapper">
             <?php echo CFS()->get('our_story');?>
+            <?php echo CFS()->get('our_team');?>
         </div>
     </div>
 

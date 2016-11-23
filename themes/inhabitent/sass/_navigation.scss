@@ -54,21 +54,16 @@ fieldset {
 
 /* Menus */
 .menu-menu-1-container{
-	/*margin-right: 150px;*/
-
 	a{
 		color: #248a83;
 		text-transform: uppercase;
-
 		&:hover {
 			color:#2f1339;
 		}
 	}
-
 	li{
 		padding-left: 1.5rem;
 	}
-
 }
 
 .nav-wrapper {
@@ -81,14 +76,15 @@ fieldset {
 	align-items: center;
 }
 
- 
+/*Tent Logo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .main-navigation {
 	background-color: hsla(0,0%,100%,.85);
 	position: fixed;
 	width: 100%;
 
 		 img{
-			height: 40px;
+			height:40px;
+			width: 50px;
 		}
 		
 

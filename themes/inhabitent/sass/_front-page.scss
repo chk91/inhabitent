@@ -12,15 +12,31 @@ body {
   width: 1120px;
 }
 
-.shop-stuff {
-  display: flex;
-}
-
 .frontpageh2 {
   text-align: center;
   font-size: 2.5rem;
   margin: 3rem 0;
   text-transform: uppercase;
+}
+
+.about-hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4)0%, rgba(0, 0, 0, 0.2)100%);
+    background-size: cover cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    div{
+        color: #fff;
+        font-size: 1.5rem;
+        font-family: 'novecento_demi';
+        letter-spacing: 2px;
+    }
+}
+
+/*Shop Stuff Section @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.shop-stuff {
+  display: flex;
 }
 
 .shopstuff-button {
@@ -70,16 +86,83 @@ body {
   }
 }
 
+/*Inhabitent Journal Section @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.latestSection {
+  ul{
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      height: 250px;
+    }
+    
+    li {
+      list-style: none;
+      border: 1px solid #e1e1e1;
+      margin: 0 0.75rem;
+    }
+  }
+}
+
+.journalwrapper {
+  position: relative;
+  height: 150px;
+  padding: 0.4rem 1.1rem;
+
+  a{
+    text-decoration: none;
+    &:visited {
+      color: black;
+    }
+    &:hover {
+      color: white;
+    }
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    color: #248A83;
+    font-family: 'novecento_demi';
+    line-height: 1.2;
+    margin: 0;
+    margin-top: 4px;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  p {
+    font-size: 0.75rem;
+    margin: 0;
+    margin-top: 4px;
+  }
+}
+
+.read-more2 {
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+    padding: 0.65rem 1.5rem;    
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: #248A83;
+        color: #fff;
+    }
+}
+
+/*Latest Adventures Section @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 .adventureSection h2 {
     text-align: center;
     font-size: 2.5rem;
-}
-
-.banner-hero {
-    background: url(../../images/logos/inhabitent-logo-full.svg) no-repeat center, linear-gradient(to bottom, rgba(0, 0, 0, 0.4)0%, rgba(0, 0, 0, 0.2)100%), url(../../images/home-hero.jpg);
-    height: 100vh;
-    background-size:  20%, cover, cover;
 }
 
 .adventures {
@@ -91,6 +174,18 @@ body {
   a {
       color: white;
   }
+}
+
+.entry-titlefront {
+        font-size: 2.3rem;
+        text-decoration: none;
+        color: white;
+        margin-bottom: 15px;
+        font-family: 'Merriweather';
+
+        &:hover {
+            color: #f0e4d1;
+        }
 }
 
 .left {
@@ -152,48 +247,18 @@ body {
   flex-flow: column;
 }
 
-.entry-titlefront {
-        font-size: 2.3rem;
-        text-decoration: none;
-        color: white;
-        margin-bottom: 15px;
-        font-family: 'Merriweather';
-
-        &:hover {
-            color: #f0e4d1;
-        }
-}
-
-.read-more {
+.home .read-more {
     font-size: 1rem;
     text-decoration: none;
     text-align: center;
     color: white;
     border: 1px solid white;
-    width: 130px;
+    width: 135px;
     padding: 0.65rem 1.5rem;    
 
     &:hover {
         background-color: #248A83;
         border: none;
-    }
-}
-
-.read-more2 {
-    font-size: 0.9rem;
-    text-decoration: none;
-    text-align: center;
-    color: black;
-    border: 1px solid black;
-    padding: 0.65rem 1.5rem;    
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
-    text-transform: uppercase;
-
-    &:hover {
-        background-color: #248A83;
-        color: #fff;
     }
 }
 
@@ -203,54 +268,3 @@ body {
     margin: 1.5rem;
 }
 
-.latestSection {
-  ul{
-    display: flex;
-    justify-content: space-between;
-
-    img {
-      height: 250px;
-    }
-    
-    li {
-      list-style: none;
-      border: 1px solid #e1e1e1;
-      margin: 0 0.75rem;
-    }
-  }
-}
-
-.journalwrapper {
-  position: relative;
-  height: 150px;
-  padding: 0.4rem 1.1rem;
-
-  a{
-    text-decoration: none;
-    &:visited {
-      color: black;
-    }
-    &:hover {
-      color: white;
-    }
-  }
-
-  h2 {
-    font-size: 1.4rem;
-    color: #248A83;
-    font-family: 'novecento_demi';
-    line-height: 1.2;
-    margin: 0;
-    margin-top: 4px;
-
-    &:hover {
-      color: black;
-    }
-  }
-
-  p {
-    font-size: 0.75rem;
-    margin: 0;
-    margin-top: 4px;
-  }
-}

@@ -9,49 +9,30 @@
     padding-top: 3rem;
 }
 
-.product-name {
-    float: left; 
-    /*width: 300px; */
-    overflow: hidden; 
-    white-space: nowrap;
-}
-.product-name span:after { content: " .................................................................................." }
-
-.product-price {
-    float: right; 
-    width: 100%; 
-    overflow: hidden;
+.page-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-family: 'novecento_demi';
+    letter-spacing: 2px;
 }
 
-.fap-master {
-    display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-}
+.taxonomy-description {
+    margin-bottom: 3rem;
+    border-bottom: 1px dashed #c8c8c8;
 
-.one-product {
-    margin-bottom: 2rem;
-    img {
-        height: 250px;
-        width: 250px;
+    p {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }
+
+/*Shop Stuff Nav @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 .shop-stuffarch {
     border-bottom: 1px dashed #c8c8c8;
     margin-bottom: 3rem;
-}
-
-.product-info {
-    width: 250px;
-    display: flex;
-    justify-content: space-between;
-    padding: .15rem 1rem;
-    border: 1px solid #e1e1e1;
-}
-
-.thumbnail-wrapper {
-    background-color: #e1e1e1;
 }
 
 .do-stuffarch {
@@ -74,10 +55,45 @@
     }
 }
 
-.page-title {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    font-family: 'novecento_demi';
-    letter-spacing: 2px;
+
+/*Products @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.products-wrapper {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
 }
+
+.product-name {
+    float: left; 
+    overflow: hidden; 
+    white-space: nowrap;
+}
+.product-name :after { content: " ........................................................................................." }
+
+.archive .product-price {
+    float: right; 
+    width: 100%; 
+    overflow: hidden;
+}
+
+.one-product {
+    margin-bottom: 2rem;
+    img {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+.product-info {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    border: 1px solid #e1e1e1;
+    font-size: 0.9rem;
+}
+
+.thumbnail-wrapper {
+    background-color: #e1e1e1;
+}
+

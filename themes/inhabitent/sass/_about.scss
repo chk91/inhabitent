@@ -2,19 +2,11 @@
     font-family: 'Merriweather';
 }
 
-.about-hero {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4)0%, rgba(0, 0, 0, 0.2)100%);
-    background-size: cover cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    div{
-        color: #fff;
-        font-size: 1.5rem;
-        font-family: 'novecento_demi';
-        letter-spacing: 2px;
-    }
+.banner-hero {
+    background: url(../../images/logos/inhabitent-logo-full.svg) no-repeat center, linear-gradient(to bottom, rgba(0, 0, 0, 0.4)0%, rgba(0, 0, 0, 0.2)100%), url(../../images/home-hero.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size:  20%, cover, cover;
 }
 
 .my-story {
@@ -37,4 +29,22 @@
 .my-story-wrapper {
     max-width: 800px;
     margin: 0 auto;
+}
+
+.our-team-wrapper {
+    text-align: left;
+    padding: 3rem;
+
+    h2{
+        text-align: center;
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        font-family: 'novecento_normal';
+        letter-spacing: 2px;
+    }
+
+    p{
+        margin: 1.5rem;
+    }
+
 }

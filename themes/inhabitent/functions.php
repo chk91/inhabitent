@@ -113,10 +113,3 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 // change the read more button on blog posts
-
-// function new_excerpt_more($more) {
-//       global $post;
-//     return '<a class="moretag" href="'. get_permalink($post->ID) . '"><div class="readmore"> Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></div></a>';
-// }
-// add_filter('excerpt_more', 'new_excerpt_more');
-
