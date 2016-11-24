@@ -43,3 +43,11 @@
   src: url("../font/novecento_sans_widenormal-webfont.eot?#iefix") format("embedded-opentype"), url("../font/novecento_sans_widenormal-webfont.woff2") format("woff2"), url("../font/novecento_sans_widenormal-webfont.woff") format("woff"), url("../font/novecento_sans_widenormal-webfont.ttf") format("truetype"), url("../font/novecento_sans_widenormal-webfont.svg#novecento_sans_widenormalRg") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+  * {
+    font-family: $font__main;
+  }
+
+  h1,h2,h3,h4,h5 {
+    font-family: $font__novo;
+  }

@@ -13,7 +13,7 @@
 
 .comment-label, .wpcf7-submit {
     text-transform: uppercase;
-    font-family: 'novecento_normal';
+    font-family: $font__novo;
 } 
 
 .wpcf7-text {
@@ -63,7 +63,6 @@
 
 .single-post .comment-content {
     line-height: 2;
-    font-family: 'Merriweather';
 }
 
 .single-post .comment-author-avatar {
@@ -75,6 +74,11 @@
 
 .single-post .vcard .fn {
     font-weight: bold;
+    font-family: $font__novo;
+}
+
+.byline {
+    font-family: $font__novo;
 }
 
 .single-post .comment-metadata {
@@ -106,6 +110,7 @@
     text-shadow: none;
     border-radius: 0;
     font-size: 1.05rem;
+    font-family: $font__novo;
 }
 
 .single-post .comment-form-author {
@@ -118,7 +123,6 @@
     label {
         margin-bottom: .5rem;
         text-transform: uppercase;
-        font-family: 'novecento_normal';
     }
     input {
         padding: .4rem;
@@ -135,7 +139,6 @@
     label {
         margin-bottom: .5rem;
         text-transform: uppercase;
-        font-family: 'novecento_normal';
     }
     input {
         padding: .4rem;
@@ -151,8 +154,8 @@
     margin: 1.5rem 0;
 
     label {
-        font-family: 'novecento_normal';
         font-size: 1.1rem;
+        font-family: $font__novo;
     }
     textarea {
         margin-top: 0.5rem;
@@ -171,7 +174,6 @@
 .single-post .comment-form-url {
     label {
         text-transform: uppercase;
-        font-family: 'novecento_normal';
     }
 }
 

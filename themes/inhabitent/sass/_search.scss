@@ -1,7 +1,3 @@
-.search-results p {
-    font-family: 'Merriweather';
-}
-
 .search-results article {
     img{
     display: none;
@@ -13,6 +9,10 @@
     font-size: 2.2rem;
     border-bottom: 1px solid #e1e1e1;
     padding-bottom: 2rem;
+
+    span {
+        font-family: $font__novo;
+    }
 }
 
 .search-results .entry-title {
@@ -21,7 +21,8 @@
         color: #248a83;
         text-decoration: none;
         text-transform: uppercase;
-        font-size: 2rem;
+        font-size: 2.1rem;
+        font-family: $font__novo;
         &:hover {
             color: #2f1339;
         }

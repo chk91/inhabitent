@@ -1,6 +1,16 @@
-.blog p{
-	font-family: 'Merriweather';
+.content-areahome {
+	padding-top: 50px;
+	margin: 0 auto;
+	width: 1120px;
+	display: flex;
 }
+
+.site-mainhome {
+	border-right: 1px solid #e1e1e1;
+	width: 70%;
+}
+
+.blog, .category, .tag {
 
 .content-areahome {
 	padding-top: 50px;
@@ -14,7 +24,7 @@
 	width: 70%;
 }
 
-.blog .entry-header {
+.entry-header {
 	position: relative;
 	margin-right: 3rem;
 	text-transform: uppercase;
@@ -24,8 +34,8 @@
 	}
 }
 
-.blog .entry-content {
-	width: 96%;
+.entry-content {
+	width: 100%;
 	p {
 		margin-bottom: 1.5rem;
 	}
@@ -35,10 +45,15 @@
 	a{
 	color: #fff;
 	text-decoration: none;
+	font-family: $font__novo;
 	}
 }
 
-.blog .entry-title{
+.entry-date {
+	font-family: $font__novo;
+}
+
+.entry-title{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -46,12 +61,12 @@
 	margin-top: 2.25rem;
 	background-color: #248a83;
 	font-size: 2rem;
-	font-family: 'novecento_demi';
 	max-width: 75%;
 
 	a{
 		color: white;
 		text-decoration: none;
+		font-family: $font__novo;
 
 		&:hover {
 			color: #f0e4d1;
@@ -59,11 +74,12 @@
 	}
 }
 
-.blog article {
+article {
 	margin: 3rem 0;
+	width: 100%;
 }
 
-.blog .entry-meta {
+ .entry-meta {
 	position: absolute;
 	bottom: 7px;
 	right: 0;
@@ -71,21 +87,24 @@
 	color: #fff;
 	padding: 0.5rem 1.5rem;
 	text-transform: uppercase;
-	font-family: 'novecento_normal';
+	font-family: $font__novo;
 }
 
-.blog .read-more {
+.read-more {
     font-size: 1rem;
     text-decoration: none;
     text-align: center;
     color: black;
     border: 1px solid black;
     padding: 0.65rem 1.5rem;
+	font-family: $font__novo;
 
     &:hover {
         background-color: #248A83;
         color: #fff;
     }
+}
+
 }
 
 .readmore {
@@ -105,5 +124,13 @@
         background-color: #248A83;
         border: none;
     }
+}
+
+.tag article, .category article {
+	width: 70%;
+}
+
+.tag .page-title, .category .page-title {
+	text-align: left;
 }
 

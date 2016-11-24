@@ -1,8 +1,5 @@
 .content-areaproduct {
     padding-top: 50px;
-    p {
-        font-family: 'Merriweather';
-    }
 }
 
 .site-mainproduct {
@@ -13,7 +10,6 @@
     text-align: center;
     text-transform: uppercase;
     font-size: 2.5rem;
-    font-family: 'novecento_demi';
     letter-spacing: 2px;
 }
 
@@ -46,6 +42,8 @@
         text-transform: uppercase;
         
         a{
+            font-size: 1.2rem;
+            font-family: $font__novo;
             color: #248A83;
             text-decoration: none;
             &:hover {
@@ -54,7 +52,6 @@
         }
     }
 }
-
 
 /*Products @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 .products-wrapper {

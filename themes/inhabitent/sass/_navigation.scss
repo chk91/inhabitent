@@ -51,10 +51,10 @@ fieldset {
 	padding-left: 1.1rem;
 }
 
-
 /* Menus */
 .menu-menu-1-container{
 	a{
+		font-family: $font__novo;
 		color: #248a83;
 		text-transform: uppercase;
 		&:hover {
@@ -87,8 +87,6 @@ fieldset {
 			width: 50px;
 		}
 		
-
-
 	ul {
 		display: none;
 		list-style: none;

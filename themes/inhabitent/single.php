@@ -26,9 +26,7 @@ get_header(); ?>
 
 				<div class = "social-wrapper">
 
-					<a class ="social-button" href ="">
-						<i class="fa fa-facebook-square" aria-hidden="true"> </i> Like
-					</a>
+					<a class ="social-button" href =""><i class="fa fa-facebook-square" aria-hidden="true"></i> Like</a>
 
 					<a class ="social-button" href ="">
 						<i class="fa fa-twitter" aria-hidden="true"></i> Tweet
@@ -61,7 +59,7 @@ get_header(); ?>
 		
 
 		</main><!-- #main -->
-<?php get_sidebar(); ?>
+		<?php get_sidebar(); ?>
 	</div><!-- #primary -->
 
 		

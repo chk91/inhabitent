@@ -265,6 +265,12 @@ th {
   font-weight: normal;
   font-style: normal; }
 
+* {
+  font-family: "Merriweather", sans-serif; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "novecento_normal"; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -490,6 +496,7 @@ fieldset {
 
 /* Menus */
 .menu-menu-1-container a {
+  font-family: "novecento_normal";
   color: #248a83;
   text-transform: uppercase; }
   .menu-menu-1-container a:hover {
@@ -788,9 +795,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.page-template-page-about p {
-  font-family: 'Merriweather'; }
-
 .banner-hero {
   background: url(../../images/logos/inhabitent-logo-full.svg) no-repeat center, linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%), url(../../images/home-hero.jpg);
   height: 100vh;
@@ -804,7 +808,6 @@ object {
     text-align: center;
     font-size: 2.3rem;
     text-transform: uppercase;
-    font-family: 'novecento_normal';
     letter-spacing: 2px; }
   .my-story p {
     margin: 1.5rem; }
@@ -820,7 +823,6 @@ object {
     text-align: center;
     font-size: 2.3rem;
     text-transform: uppercase;
-    font-family: 'novecento_normal';
     letter-spacing: 2px; }
   .our-team-wrapper p {
     margin: 1.5rem; }
@@ -834,10 +836,12 @@ object {
   padding: 3% 10%;
   color: white;
   line-height: 2; }
+  .footy p {
+    margin: 0; }
   .footy h2 {
     color: #d99054;
     text-transform: uppercase;
-    font-family: 'novecento_demi'; }
+    margin: 0; }
   .footy .contact {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
@@ -865,11 +869,12 @@ object {
   margin-top: 25px; }
 
 .site-info {
+  font-family: "novecento_normal";
   text-align: center;
   width: 100%;
   padding: 2rem 1rem;
-  text-transform: uppercase;
-  font-family: 'novecento_normal'; }
+  margin: 2rem;
+  text-transform: uppercase; }
 
 .day {
   font-weight: bold; }
@@ -903,7 +908,6 @@ body {
   .about-hero div {
     color: #fff;
     font-size: 1.5rem;
-    font-family: 'novecento_demi';
     letter-spacing: 2px; }
 
 /*Shop Stuff Section @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -912,6 +916,7 @@ body {
   display: flex; }
 
 .shopstuff-button {
+  font-family: "novecento_normal";
   font-size: 1rem;
   text-decoration: none;
   text-align: center;
@@ -976,7 +981,6 @@ body {
   .journalwrapper h2 {
     font-size: 1.4rem;
     color: #248A83;
-    font-family: 'novecento_demi';
     line-height: 1.2;
     margin: 0;
     margin-top: 4px; }
@@ -988,6 +992,7 @@ body {
     margin-top: 4px; }
 
 .read-more2 {
+  font-family: "novecento_normal";
   font-size: 0.9rem;
   text-decoration: none;
   text-align: center;
@@ -1020,8 +1025,7 @@ body {
   font-size: 2.3rem;
   text-decoration: none;
   color: white;
-  margin-bottom: 15px;
-  font-family: 'Merriweather'; }
+  margin-bottom: 15px; }
   .entry-titlefront:hover {
     color: #f0e4d1; }
 
@@ -1085,6 +1089,7 @@ body {
       flex-flow: column; }
 
 .home .read-more {
+  font-family: "novecento_normal";
   font-size: 1rem;
   text-decoration: none;
   text-align: center;
@@ -1103,9 +1108,6 @@ body {
       flex-direction: column;
   margin: 1.5rem; }
 
-.blog p {
-  font-family: 'Merriweather'; }
-
 .content-areahome {
   padding-top: 50px;
   margin: 0 auto;
@@ -1117,23 +1119,38 @@ body {
   border-right: 1px solid #e1e1e1;
   width: 70%; }
 
-.blog .entry-header {
+.blog .content-areahome, .category .content-areahome, .tag .content-areahome {
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 1120px;
+  display: -ms-flexbox;
+  display: flex; }
+
+.blog .site-mainhome, .category .site-mainhome, .tag .site-mainhome {
+  border-right: 1px solid #e1e1e1;
+  width: 70%; }
+
+.blog .entry-header, .category .entry-header, .tag .entry-header {
   position: relative;
   margin-right: 3rem;
   text-transform: uppercase; }
-  .blog .entry-header img {
+  .blog .entry-header img, .category .entry-header img, .tag .entry-header img {
     width: 100%; }
 
-.blog .entry-content {
-  width: 96%; }
-  .blog .entry-content p {
+.blog .entry-content, .category .entry-content, .tag .entry-content {
+  width: 100%; }
+  .blog .entry-content p, .category .entry-content p, .tag .entry-content p {
     margin-bottom: 1.5rem; }
 
-.comments-link a {
+.blog .comments-link a, .category .comments-link a, .tag .comments-link a {
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: "novecento_normal"; }
 
-.blog .entry-title {
+.blog .entry-date, .category .entry-date, .tag .entry-date {
+  font-family: "novecento_normal"; }
+
+.blog .entry-title, .category .entry-title, .tag .entry-title {
   position: absolute;
   top: 0;
   left: 0;
@@ -1141,18 +1158,19 @@ body {
   margin-top: 2.25rem;
   background-color: #248a83;
   font-size: 2rem;
-  font-family: 'novecento_demi';
   max-width: 75%; }
-  .blog .entry-title a {
+  .blog .entry-title a, .category .entry-title a, .tag .entry-title a {
     color: white;
-    text-decoration: none; }
-    .blog .entry-title a:hover {
+    text-decoration: none;
+    font-family: "novecento_normal"; }
+    .blog .entry-title a:hover, .category .entry-title a:hover, .tag .entry-title a:hover {
       color: #f0e4d1; }
 
-.blog article {
-  margin: 3rem 0; }
+.blog article, .category article, .tag article {
+  margin: 3rem 0;
+  width: 100%; }
 
-.blog .entry-meta {
+.blog .entry-meta, .category .entry-meta, .tag .entry-meta {
   position: absolute;
   bottom: 7px;
   right: 0;
@@ -1160,16 +1178,17 @@ body {
   color: #fff;
   padding: 0.5rem 1.5rem;
   text-transform: uppercase;
-  font-family: 'novecento_normal'; }
+  font-family: "novecento_normal"; }
 
-.blog .read-more {
+.blog .read-more, .category .read-more, .tag .read-more {
   font-size: 1rem;
   text-decoration: none;
   text-align: center;
   color: black;
   border: 1px solid black;
-  padding: 0.65rem 1.5rem; }
-  .blog .read-more:hover {
+  padding: 0.65rem 1.5rem;
+  font-family: "novecento_normal"; }
+  .blog .read-more:hover, .category .read-more:hover, .tag .read-more:hover {
     background-color: #248A83;
     color: #fff; }
 
@@ -1187,10 +1206,14 @@ body {
     background-color: #248A83;
     border: none; }
 
+.tag article, .category article {
+  width: 70%; }
+
+.tag .page-title, .category .page-title {
+  text-align: left; }
+
 .content-areaproduct {
   padding-top: 50px; }
-  .content-areaproduct p {
-    font-family: 'Merriweather'; }
 
 .site-mainproduct {
   padding-top: 3rem; }
@@ -1199,7 +1222,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-size: 2.5rem;
-  font-family: 'novecento_demi';
   letter-spacing: 2px; }
 
 .taxonomy-description {
@@ -1226,6 +1248,8 @@ body {
     margin: 0 2rem;
     text-transform: uppercase; }
     .do-stuffarch li a {
+      font-size: 1.2rem;
+      font-family: "novecento_normal";
       color: #248A83;
       text-decoration: none; }
       .do-stuffarch li a:hover {
@@ -1272,13 +1296,6 @@ body {
 .thumbnail-wrapper {
   background-color: #e1e1e1; }
 
-.single-post h1, .single-post h2, .single-post h3 {
-  font-family: 'novecento_demi';
-  font-size: 2.2rem; }
-
-.single-post p {
-  font-family: 'Merriweather'; }
-
 .content-areasingle {
   display: -ms-flexbox;
   display: flex; }
@@ -1291,9 +1308,6 @@ body {
   margin-right: 3rem; }
   .single .entry-header img {
     width: 100%; }
-
-.single article {
-  margin: 3rem 0; }
 
 .single .entry-content {
   width: 96%; }
@@ -1316,9 +1330,11 @@ body {
 
 .single-post .cat-links, .single-post .tags-links {
   margin-right: 10px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "novecento_normal"; }
   .single-post .cat-links a, .single-post .tags-links a {
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: "novecento_normal"; }
 
 .single .entry-meta {
   position: absolute;
@@ -1328,7 +1344,10 @@ body {
   color: #fff;
   padding: 0.5rem 1.5rem;
   text-transform: uppercase;
-  font-family: 'novecento_normal'; }
+  font-family: "novecento_normal"; }
+
+.entry-meta {
+  font-family: "novecento_normal"; }
 
 .read-more {
   font-size: 1rem;
@@ -1354,7 +1373,7 @@ body {
   padding: 0.65rem 1.5rem;
   margin-right: 5px;
   text-transform: uppercase;
-  font-family: 'novecento_normal'; }
+  font-family: "novecento_normal"; }
   .social-button:visited {
     color: black; }
   .social-button:hover {
@@ -1380,14 +1399,13 @@ body {
   color: #d99054;
   font-size: 2.5rem;
   text-transform: uppercase;
-  font-family: 'novecento_demi';
   margin: auto; }
 
 .single-product .product-price {
-  font-family: 'novecento_normal';
   font-size: 1.8rem;
   margin: auto;
-  padding: 0.5rem 0; }
+  padding: 0.5rem 0;
+  font-family: "novecento_normal"; }
 
 .single-product .type-product {
   display: -ms-flexbox;
@@ -1404,8 +1422,8 @@ body {
   .single-product .entry-content .price {
     font-size: 1.7rem; }
 
-.search-results p {
-  font-family: 'Merriweather'; }
+.single-product .social-button {
+  font-family: "novecento_normal"; }
 
 .search-results article img {
   display: none; }
@@ -1415,6 +1433,8 @@ body {
   font-size: 2.2rem;
   border-bottom: 1px solid #e1e1e1;
   padding-bottom: 2rem; }
+  .search-results .page-title span {
+    font-family: "novecento_normal"; }
 
 .search-results .entry-title {
   padding-top: 1.7rem; }
@@ -1422,7 +1442,8 @@ body {
     color: #248a83;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 2rem; }
+    font-size: 2.1rem;
+    font-family: "novecento_normal"; }
     .search-results .entry-title a:hover {
       color: #2f1339; }
 
@@ -1480,7 +1501,7 @@ body {
 
 .comment-label, .wpcf7-submit {
   text-transform: uppercase;
-  font-family: 'novecento_normal'; }
+  font-family: "novecento_normal"; }
 
 .wpcf7-text {
   border-radius: 0; }
@@ -1518,8 +1539,7 @@ body {
   padding-bottom: 1.5rem; }
 
 .single-post .comment-content {
-  line-height: 2;
-  font-family: 'Merriweather'; }
+  line-height: 2; }
 
 .single-post .comment-author-avatar {
   margin-right: 1.5rem; }
@@ -1527,7 +1547,11 @@ body {
     border-radius: 50%; }
 
 .single-post .vcard .fn {
-  font-weight: bold; }
+  font-weight: bold;
+  font-family: "novecento_normal"; }
+
+.byline {
+  font-family: "novecento_normal"; }
 
 .single-post .comment-metadata {
   color: gray; }
@@ -1551,7 +1575,8 @@ body {
   box-shadow: none;
   text-shadow: none;
   border-radius: 0;
-  font-size: 1.05rem; }
+  font-size: 1.05rem;
+  font-family: "novecento_normal"; }
 
 .single-post .comment-form-author {
   display: -ms-flexbox;
@@ -1563,8 +1588,7 @@ body {
   margin-bottom: 1.5rem; }
   .single-post .comment-form-author label {
     margin-bottom: .5rem;
-    text-transform: uppercase;
-    font-family: 'novecento_normal'; }
+    text-transform: uppercase; }
   .single-post .comment-form-author input {
     padding: .4rem;
     background-color: #f4f4f4; }
@@ -1579,8 +1603,7 @@ body {
   margin-bottom: 1.5rem; }
   .single-post .comment-form-email label {
     margin-bottom: .5rem;
-    text-transform: uppercase;
-    font-family: 'novecento_normal'; }
+    text-transform: uppercase; }
   .single-post .comment-form-email input {
     padding: .4rem;
     background-color: #f4f4f4; }
@@ -1591,8 +1614,8 @@ body {
 .single-post .comment-form-comment {
   margin: 1.5rem 0; }
   .single-post .comment-form-comment label {
-    font-family: 'novecento_normal';
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    font-family: "novecento_normal"; }
   .single-post .comment-form-comment textarea {
     margin-top: 0.5rem;
     background-color: #f4f4f4; }
@@ -1605,8 +1628,7 @@ body {
   background-color: #f4f4f4; }
 
 .single-post .comment-form-url label {
-  text-transform: uppercase;
-  font-family: 'novecento_normal'; }
+  text-transform: uppercase; }
 
 .single-post .comment-respond {
   padding-right: 2rem; }
@@ -1662,3 +1684,62 @@ body {
 .page-id-11 .content-area {
   width: 70%;
   border-right: 1px solid #e1e1e1; }
+
+.tag .content-area {
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 1120px;
+  display: -ms-flexbox;
+  display: flex; }
+
+.tag .site-main {
+  border-right: 1px solid #e1e1e1;
+  width: 70%; }
+
+.tag article {
+  width: 70%; }
+
+.tag .entry-header {
+  position: relative;
+  margin-right: 3rem;
+  text-transform: uppercase; }
+  .tag .entry-header img {
+    width: 100%; }
+
+.tag .entry-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.75rem 1.5rem;
+  margin-top: 2.25rem;
+  background-color: #248a83;
+  font-size: 2rem;
+  max-width: 75%; }
+  .tag .entry-title a {
+    color: white;
+    text-decoration: none;
+    font-family: "novecento_normal"; }
+    .tag .entry-title a:hover {
+      color: #f0e4d1; }
+
+.tag .entry-meta {
+  position: absolute;
+  bottom: 7px;
+  right: 0;
+  background-color: #248a83;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  font-family: "novecento_normal"; }
+
+.tag .read-more {
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+  padding: 0.65rem 1.5rem;
+  font-family: "novecento_normal"; }
+  .tag .read-more:hover {
+    background-color: #248A83;
+    color: #fff; }
