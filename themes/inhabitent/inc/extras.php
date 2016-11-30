@@ -32,13 +32,8 @@ function my_login_logo() { ?>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
-
 function my_styles_method() {
 
-            //    if(!is_page_template( 'page-about.php' )){
-            //        return;
-            //    }
-       
       $url = CFS()->get( 'about_image' );//This is grabbing the background image vis Custom Field Suite Plugin
       $custom_css = "
               .about-hero{
@@ -59,17 +54,6 @@ function get_all_product_posts( $query ) {
       }
 }
 add_action( 'pre_get_posts', 'get_all_product_posts' );
-
-// function inhabitent_product_archive_title ($title){
-//       if(is_post_type_archive('product')){
-//                   $title = 'Shop Stuff';
-//       }
-//       elseif(is_tax()) {
-//           $title = single_term_title( '', false );
-//       }
-//       return $title;
-// }
-// add_filter( 'get_the_archive_title', 'inhabitent_product_archive_title' );
 
 function shop_stuff_title( $title ) {
     if(is_post_type_archive('product')){

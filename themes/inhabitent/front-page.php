@@ -7,15 +7,10 @@
 
 get_header(); ?>
 
-    <div class="banner-hero">
-    </div>
-
-   
+    <div class="banner-hero"></div>
 
 	<div id="primary" class="content-area-front">
 		<main id="main" class="site-main-front" role="main">
-
-             
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -25,9 +20,9 @@ get_header(); ?>
 
 		</main><!-- #main -->
     <h2 class="frontpageh2">Shop Stuff</h2>
+
   <section class="shop-stuff container">
             <?php
-
             $terms = get_terms('product_type');
             foreach ($terms as $term):
             ?>
@@ -35,7 +30,6 @@ get_header(); ?>
             <div class="do-stuff container">
             <?php $url = get_term_link ($term->slug , 'product_type'); ?>
             
-
             <img src="<?php echo get_template_directory_uri() ?>/images/product-type-icons/<?php echo $term->slug?>.svg">
             <p> <?php echo $term->description ?> </p>
             <a class = "shopstuff-button" href="product_type/<?php echo $term->slug;?>" > <?php echo $term->name . ' Stuff'; ?> </a>
@@ -44,9 +38,10 @@ get_header(); ?>
             <?php endforeach; ?>
 
 </section>
+
     <h2 class="frontpageh2">Inhabitent Journal</h2>
         <section class="latestSection container">
-<ul>
+    <ul>
             <?php 
             $args = array(   'post_type' => 'post',
                     'order' => 'DESC',
@@ -66,7 +61,7 @@ get_header(); ?>
             </div></li>
             
             <?php endforeach; wp_reset_postdata(); ?>
-</ul>
+    </ul>
 
         <section class="adventureSection container">
 

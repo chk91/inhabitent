@@ -23,7 +23,7 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 
 				<div class ="nav-wrapper container">
-						<a href = "http://localhost:3000/inhabitent/">
+						<a href="<?php echo esc_url( home_url( '/') ); ?>" rel="home">
 							<img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent.svg">
 						</a>
 					<div class="nav-button-wrapper">
